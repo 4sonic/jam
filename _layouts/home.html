@@ -1,0 +1,238 @@
+---
+layout: default
+---
+
+<!-- Home Carousel -->
+<div class="orbit" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; timerDelay: 5000; pauseOnHover: false;">
+  <div class="orbit-wrapper">
+
+    <div class="orbit-controls show-for-xxlarge">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><svg class="icon icon-arrows icon-arrow-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-left"></use></svg></button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span><svg class="icon icon-arrows icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></button>
+    </div>
+
+    <ul class="orbit-container">
+    {% assign pages = site.pages  %}
+
+      {% for work in page.images %}
+
+      {% if work.carousel-image %}
+       {% assign image = work.carousel-image %}
+      {% else %}
+        {% assign image = work.image %}
+      {% endif %}
+
+      <li class="orbit-slide" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}">
+        <div class="grid-y align-center" style="height: 100%;">
+          <div class="shrink cell">
+
+          {% if work.has-carousel-text %}
+          <div class="grid-container transparent">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="small-12 medium-10 large-10 cell">
+                  <h1 class="yellow secondary-font margin-top-2">{{work.name}}</h1>
+                  <h2 class="white">{{work.excerpt}}</h2>
+                </div>
+              </div>
+          </div>
+          {% endif %}
+          </div>
+        </div>
+      </li>
+     {% endfor %}
+    </ul>
+
+  </div>
+</div>
+<!-- End Home Carousel -->
+
+
+<!-- Home Intro -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1 align-center-middle">
+
+    <div class="small-4 medium-8 large-2 cell">
+    <img src="/uploads/submarine.svg" alt="">
+    </div>
+
+    <div class="small-12 medium-8 large-10 cell">
+      <h3 class="$secondary-font-family;">{{page.header}}</h3>
+      {% if page.sub-header %}
+      <h3 class="sans-regular medium-gray">{{page.sub-header}}</h3>
+      {% endif %}
+      {% if page.sign-off %}
+      <h3 class="sans-regular medium-gray">{{page.sign-off}}</h3>
+      {% endif %}
+      <div class="padding-top-1"><a href="/careers/" class="h4 sans-regular medium-gray">Ver más <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a></div>
+    </div>
+
+
+
+  </div>
+</div>
+<!-- End Home Intro -->
+
+
+
+
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 medium-6 cell">
+      <h2 class="secondary-font-family;">Sobre nosotros</h2>
+      {% assign image = page.sobre-nosotros %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="light-gray-background page__home__image">
+
+
+
+      <div class="grid-y height-100 align-center">
+        <div class="shrink cell text-center">
+          <a href="/careers/" class="button warning large">Sobre Nosotros</a>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+    <div class="small-12 medium-6 cell">
+      <h2 class="$secondary-font-family;">Lo que hacemos</h2>
+      {% assign image = page.lo-que-hacemos %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="light-gray-background page__home__image">
+
+      <div class="grid-y height-100 align-center">
+        <div class="shrink cell text-center">
+          <a href="/services/" class="button warning large">Lo que hacemos</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Green bg -->
+
+{% if page.image %}
+<section class="grid-container">
+  <div class="grid-x white align-center-middle text-center">
+    <div class="small-12 cell">
+      {% assign image = page.image %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="page__image">
+
+      <div class="grid-y height-100 align-center">
+        <div class="shrink cell text-center padding-space-1">
+          <h2>Somos un equipo comprometido, con el más elevado respeto a la dignidad humana, respaldado por una sólida formación académica.</h2>
+          <a class="hide-for-small-only margin-top-2 button large" href="/careers/">Saber más</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- End Green bg -->
+
+
+<!-- Home Intro -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1">
+
+    <div class="small-12 medium-8 large-10 cell">
+      <h2 class="$secondary-font-family;">{{page.header-2}}</h2>
+      {% if page.sub-header %}
+      <h3 class="sans-regular medium-gray">{{page.sub-header}}</h3>
+      {% endif %}
+      {% if page.sign-off %}
+      <h3 class="sans-regular medium-gray">{{page.sign-off}}</h3>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+<!-- End Home Intro -->
+
+
+<!-- Video Isabella -->
+{% if page.image %}
+<section class="grid-container hide-for-small-only">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      {% assign image = page.isabella %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="page__image">
+
+
+      {% if page.video %}
+      <div class="grid-y height-100 align-center video">
+        <div class="shrink cell text-center" data-src="{{page.video}}">
+          <a href="{{page.video}}" class="white"><svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg><br><h2>Ver vídeo</h2></a>
+        </div>
+      </div>
+      {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Video Isabella -->
+
+<!-- Video Isabella mobile -->
+{% if page.image %}
+<section class="grid-container show-for-small-only">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      {% assign image = page.isabella %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="page__image">
+
+      {% if page.video %}
+      <div class="grid-y height-100 align-center">
+        <div class="shrink cell text-center">
+          <a href="{{page.video}}" class="white" target="_blank" rel="noopener noreferrer"><svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg><br><h2>Ver vídeo</h2></a>
+        </div>
+      </div>
+      {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Video Isabella -->
+
+
+<!-- Home Projects Link -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
+
+    <div class="small-12 medium-8 cell medium-gray">
+      <a href="/work/" class="h4 sans-regular">Ver todos los testimonios <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a>
+    </div>
+
+  </div>
+</div>
+<!-- End Home Projects Link -->
+
+<!-- Home Intro -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1">
+
+    <div class="cell small-12 large-auto">
+    <h4 class="">En los consultorios de Audiología existe una cabina sonoamortiguada que sirve para aislar los sonidos de fondo y poder evaluar de una manera objetiva la audición de los pacientes. Estas cabinas suelen ser intimidantes por ser lugares encerrados y oscuros; a veces hasta generan ansiedad.
+    Por eso decidimos convertir ese lugar en un espacio lleno de aventura y emoción.
+    Ahora nuestra cabina es un Submarino Amarillo, donde niños y adultos gozan de entrar y tener una experiencia increíble mientras su audición es evaluada.
+    Porque al final de cuentas… <span class="yellow-submarine">“We all live in a Yellow Submarine, Yellow Submarine, Yellow Submarine”<br></span></h4>
+    </div>
+
+  </div>
+</div>
+<!-- End Home Intro -->

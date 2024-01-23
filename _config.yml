@@ -1,0 +1,134 @@
+---
+title: Corti Mx
+timezone: UTC
+collections:
+  careers:
+    title: Careers
+    output: true
+  services:
+    title: Services
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: services
+  values:
+    excerpt:
+    description:
+    image:
+    carousel-image:
+    video:
+    layout: page
+- scope:
+    path: ''
+    type: careers
+  values:
+    excerpt:
+    description:
+    image:
+    carousel-image:
+    video:
+    layout: doctors_page
+- scope:
+    path: ''
+    type: work
+  values:
+    client:
+    excerpt:
+    description:
+    image:
+    carousel-image:
+    video:
+    has-carousel-text:
+    is-carousel:
+    is-selected:
+    has-carousel:
+    images:
+    - image:
+      caption:
+    quote:
+    cite:
+    layout: page
+
+quote: EARN have helped transform our culture to live and breathe innovative thinking.
+  We have happy people who are delivering great results.
+cite: Peter Harding, CEO, Lucozade Ribena Suntory
+url: https://www.earnstudios.com
+description: Earn Studios is an innovation consultancy that helps companies create
+  share-worthy products
+permalink: pretty
+exclude:
+- bower.json
+- Gemfile.lock
+- package.json
+- config.codekit3
+- README*
+- LICENSE*
+- CHANGELOG*
+- node_modules
+- ".gitignore"
+- bower_components
+- assets/scss
+plugins:
+- jekyll-paginate-v2
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+- jekyll/imgix
+markdown: kramdown
+kramdown:
+  auto_ids: false
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+colophon:
+company: CORTI MX
+email: contacto@corti.com.mx
+analytics: UA-84661141-1
+logo: "/assets/img/logo.svg"
+per_page: 12
+date_format: "%b %Y"
+future: true
+sponsors:
+  phonak: https://www.phonak.com/mx/es.html
+  cochlear: https://www.cochlear.com/es/es/home
+  ab: https://www.advancedbionics.com/latam/es/home.html
+social:
+  facebook: https://www.facebook.com/CrecerOyendo/
+  instagram: https://www.instagram.com/corti_creceroyendo
+  youtube: http://www.youtube.com/@CORTIMARKETING
+company: Corti Mx
+event-span: Torre de consultorios piso 11, 5-A
+event-address: Hospital Real San José Valle Real
+event-address-short: Torre de consultorios Piso 11, 5-A
+compress_html:
+  comments:
+  - "<!-- "
+  - " -->"
+  blanklines: true
+  profile: false
+pagination:
+  collection: posts
+  enabled: true
+  per_page: 6
+  limit: 0
+  permalink: "/:num/"
+  title: ":title — :num of :max"
+  sort_field: date
+  sort_reverse: true
+autopages:
+  enabled: false

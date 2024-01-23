@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<!-- Hire Us Hero -->
+{% assign background-image = page.hero-image %}
+<section class="hero" <img data-interchange="[/uploads/nuestro-equipo-small.jpg, small], [/uploads/equipo.jpg, medium], [/uploads/equipo.jpg, large]">
+  <div class="grid-x align-middle align-center" style="height: 100%;">
+    <div class="small-10  medium-8 large-6 cell text-center">
+      <h1 class="primary-font white" data-aos="none">{{page.hero-text}}</h1>
+    </div>
+  </div>
+</section>
+<!-- End Hire Us Hero -->
+
+{% assign psize = site.careers | size %}
+{% if psize == 0 %}
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-9 cell text-center">
+      <h3>{{page.intro}}</h3>
+    </div>
+  </div>
+</div>
+
+{% else %}
+
+<!-- Intro -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center padding-vertical-space-1">
+    <div class="small-12 medium-9 cell text-center">
+      <h3>{{page.intro}}</h3>
+    </div>
+  </div>
+</div>
+<!-- End Intro -->
+
+<!-- Page Content -->
+{% if page.content %}
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell page__content padding-bottom-2">
+      {{ page.content | replace: "/uploads", "https://earn-studios.imgix.net/uploads" | markdownify }}
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Page Content -->
+
+<!-- People -->
+<div class="grid-container padding-vertical-2">
+  <div class="grid-x grid-padding-x grid-padding-y text-center medium-text-left">
+    {% assign careers = site.careers | sort: 'position' | where: "is-front", "true" | limit:2 %}
+    {% for role in careers %}
+    <div class="small-12 medium-6 large-6 cell">
+    <h5>{{role.title}}</h5>
+    <h6 class="medium-gray">{{role.about-description}}</h6>
+    <img class="padding-vertical-1"src="{{role.image}}" alt="">
+    <small>{{role.skills-description}}</small><br>
+    <a class="button margin-top-1" href="{{ role.url }}">Leer más</a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="grid-x grid-padding-x grid-padding-y text-center medium-text-left">
+    {% assign careers = site.careers | sort: 'position' | where: "is-bottom", "true" %}
+    {% for role in careers limit: 10 %}
+    <div class="small-12 medium-6 large-6 cell">
+    <h5>{{role.title}}</h5>
+    <h6 class="medium-gray">{{role.about-description}}</h6>
+    <img class="padding-vertical-1"src="{{role.image}}" alt="">
+    <small>{{role.skills-description}}</small><br>
+    <a class="button margin-top-1" href="{{ role.url }}">Leer más</a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End People -->
+
+{% endif %}

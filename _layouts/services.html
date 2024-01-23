@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<!-- Hire Us Hero -->
+{% assign background-image = page.mobile-hero-image %}
+<section class="hero" <img data-interchange="[/uploads/lo-que-hacemos.jpg, small], [/uploads/lo-que-hacemos-large.jpg, medium], [/uploads/lo-que-hacemos-large.jpg, large]">
+  <div class="grid-x align-middle align-center" style="height: 100%;">
+    <div class="small-10  medium-8 large-6 cell text-center">
+      <h1 class="primary-font white" data-aos="none">{{page.hero-text}}</h1>
+    </div>
+  </div>
+</section>
+<!-- End Hire Us Hero -->
+
+<!-- Services -->
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1">
+
+    <div class="small-12 medium-3 cell show-for-medium">
+      <h4 class="blue">Servicios</h4>
+
+    </div>
+
+    <div class="small-12 medium-9 cell">
+      {% assign services = site.services | sort: 'position' %}
+      {% for service in services %}
+      <div class="margin-bottom-2">
+      <h3 class="blue">{{ service.title }}</h3>
+      <h4 class="medium-gray">{{ service.about-description }}</h4>
+      <img class="padding-vertical-space-1"src="{{service.image}}" alt="">
+      <p class="padding-vertical-space-1">{{ service.content | strip_html | truncatewords: 50 }}</p>
+      <a class="button" href="{{ service.url }}" class="plus">Leer más</a>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+<!-- End Services -->
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="small-12 medium-3 cell show-for-medium">
+
+      <video playsinline autoplay muted loop>
+        <source src="{{site.video}}" poster="" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
