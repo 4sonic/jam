@@ -677,9 +677,9 @@ body:not(.lg-from-hash){
         &:hover{
             .lg-video-play{
                 background: url("#{$lg-path-images}/vimeo-play.png") no-repeat scroll 0 -58px transparent;
-            } 
+            }
 
-        }  
+        }
     }
 
     .lg-has-html5{
@@ -690,13 +690,13 @@ body:not(.lg-from-hash){
             margin-top: -32px;
             width: 64px;
             opacity: 0.8;
-        }  
+        }
         &:hover{
             .lg-video-play{
                 opacity: 1
-            } 
+            }
 
-        } 
+        }
     }
 
     .lg-has-youtube{
@@ -706,9 +706,9 @@ body:not(.lg-from-hash){
         &:hover{
             .lg-video-play{
                 background: url("#{$lg-path-images}/youtube-play.png") no-repeat scroll 0 -60px transparent;
-            } 
+            }
 
-        }  
+        }
     }
     .lg-video-object {
         width: 100% !important;
@@ -1048,7 +1048,7 @@ body:not(.lg-from-hash){
             &:after {
                 content: "\e901";
             }
-        }   
+        }
     }
     #lg-share-twitter {
         .lg-icon{
@@ -1056,7 +1056,7 @@ body:not(.lg-from-hash){
             &:after {
                 content: "\e904";
             }
-        }  
+        }
     }
     #lg-share-googleplus {
         .lg-icon{
@@ -1064,7 +1064,7 @@ body:not(.lg-from-hash){
             &:after {
                 content: "\e902";
             }
-        }  
+        }
     }
     #lg-share-pinterest {
         .lg-icon{
@@ -1072,7 +1072,7 @@ body:not(.lg-from-hash){
             &:after {
                 content: "\e903";
             }
-        }  
+        }
     }
 }
 
@@ -1159,19 +1159,19 @@ body:not(.lg-from-hash){
 
     .lg-item {
 //         background: url("#{$lg-path-images}/loading.gif") no-repeat scroll center center transparent;
-        display: none !important; 
+        display: none !important;
     }
 
-    
+
 //     Animation
     &.lg-css3{
         .lg-prev-slide, .lg-current, .lg-next-slide{
-            display: inline-block !important; 
+            display: inline-block !important;
         }
     }
     &.lg-css{
         .lg-current{
-            display: inline-block !important; 
+            display: inline-block !important;
         }
     }
 

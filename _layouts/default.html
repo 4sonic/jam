@@ -4,45 +4,72 @@ layout: compress
 
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-<!-- <audio src="/uploads/audio.mp3" autoplay loop></audio> -->
+
 <!-- Head -->
 {% include site/head.html %}
 <!-- End Head -->
 
 <body class="{{page.layout | slugify}}">
 
+<!-- Off Canvas Wrapper -->
+<div class="off-canvas-wrapper">
+
 <!-- Off Canvas Navigation -->
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap" data-close-on-click="false" data-content-scroll="false">
-{% include site/offcanvas.html %}
+{% include site/off-canvas.html %}
 </div>
 <!-- End Off Canvas Navigation -->
 
-<div class="off-canvas-content" data-off-canvas-content id="swup-body">
+<div class="off-canvas-content" data-off-canvas-content>
+<nav>
 <!-- Navigation -->
 {% include site/navigation.html %}
 <!-- End Navigation -->
+</nav>
 
-<div class="swup-transition-fade">
+<main>
 <!-- Content -->
-{{content}}
+{{ content }}
 <!-- End Content -->
-</div>
+</main>
 
-{% unless page.layout == "story" or "contact" %}
-<!-- Testimonials -->
-{% include testimonials.html %}
-<!-- End Testimonials -->
-{% endunless %}
+
+
+<!-- Call to Action -->
+{% if page.has-call-to-action %}
+<section class="">
+  <div class="grid-container black-background">
+    <div class="grid-x grid-padding-x grid-padding-y align-center-middle white black-background">
+
+      <div class="small-12 medium-8 cell">
+        <h1>{{page.call-to-action-title}}</h1>
+        <h4>{{page.call-to-action-text}}</h4>
+        <h4 class="sans-regular medium-gray"><a href="mailto:{{page.call-to-action-email}}">{{page.call-to-action-email}}</a></h4>
+      </div>
+      <div class="small-10 medium-4 cell">
+        <lottie-player
+          src="/assets/animation/Animation - 1700362697929.json"
+          background="transparent"
+          speed="0.7"
+          autoplay loop
+        ></lottie-player>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Call to Action -->
+
 
 
 <!-- Footer -->
 {% include site/footer.html %}
 <!-- End Footer -->
-
 </div>
 
 
-
+<!-- End Off Canvas Wrapper -->
 </body>
 
 </html>

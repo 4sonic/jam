@@ -6,18 +6,18 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 
-// Settings
-// ==================================================
-$hamburger-padding-x                       : 0 !default;
-$hamburger-padding-y                       : 0.5rem !default;
-$hamburger-layer-width                     : 2rem !default;
-$hamburger-layer-height                    : 4px !default;
-$hamburger-layer-spacing                   : 8px !default;
-$hamburger-layer-color                     : $white !default;
-$hamburger-layer-border-radius             : $global-radius !default;
-$hamburger-hover-opacity                   : 0.5 !default;
-$hamburger-hover-transition-duration       : 0.15s !default;
-$hamburger-hover-transition-timing-function: linear !default;
+ // Settings
+ // ==================================================
+ $hamburger-padding-x                       : 1rem !default;
+ $hamburger-padding-y                       : 1rem !default;
+ $hamburger-layer-width                     : 3rem !default;
+ $hamburger-layer-height                    : 3px !default;
+ $hamburger-layer-spacing                   : 6px !default;
+ $hamburger-layer-color                     : $black !default;
+ $hamburger-layer-border-radius             : 0 !default;
+ $hamburger-hover-opacity                   : 0.5 !default;
+ $hamburger-hover-transition-duration       : 0.15s !default;
+ $hamburger-hover-transition-timing-function: linear !default;
 
 // To use CSS filters as the hover effect instead of opacity,
 // set $hamburger-hover-use-filter as true and

@@ -5,6 +5,7 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: center;
 }
 
 /* ==========================================
@@ -15,60 +16,38 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-clients {
-  font-size: 5.5rem;
-}
-
-.icon-whatsapp {
-  width: 1em;
-}
-
-.icon-twitter {
-  width: 0.9285714285714285em;
-}
-
-.icon-facebook {
-  width: 0.5881428571428571em;
-}
-
-.icon-instagram {
-  width: 0.8571428571428571em;
-}
-
-
 .icon-logo {
-	font-size: 8rem;
+  width: 2.875em;
+  font-size: 2rem;
 }
 
-.holding .icon-logo {
-	font-size: 10rem;
+.icon-logo-full-color {
+  width: 2.5em;
+  font-size: 3rem;
 }
 
-.icon-play_arrow {
-	font-size: 4rem;
+.icon-arrows {
+  font-size: 2rem;
 }
 
-.icon-call_made {
-	font-size: 1.5rem;
+.icon-sponsors {
+  color: $blue;
+  font-size: 4rem;
 }
 
-.icon-brightness_1 {
-	font-size: 1.5rem;
-}
-
-
-.icon-menu {
-	font-size: 1.5rem;
-}
-
-.icon-sort {
-	font-size: 1.5rem;
-}
-
-.icon-instagram {
-	font-size: 1.5rem;
+.icon-socials {
+  font-size: 2.5rem;
 }
 
 .icon-play-circle {
-	font-size: 4rem;
+  @include breakpoint(small) {
+    font-size: 4rem;
+  }
+  @include breakpoint(medium) {
+    font-size: 6rem;
+  }
+}
+
+.icon-sort {
+  font-size: 1rem;
 }

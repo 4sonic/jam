@@ -1,26 +1,11 @@
-<div class="small-12 medium-6 {% if work.is-full-width %}medium-12{% endif %} cell text-center">
+<div class="cell">
   <a href="{{ work.url }}">
-    {% assign image = work.image %}
-    <div class="margin-bottom-1 image" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}">
-      <div class="content grid-y align-center">
-        <div class="shrink cell padding-1">
-
-<!--
-          <div class="grid-x align-center">
-            <div class="small-10 medium-10 large-10 cell">
-              <svg class="icon icon-brightness_1"><use xlink:href="/assets/icons/symbol-defs.svg#icon-brightness_1"></use></svg>
-            </div>
-          </div>
--->
-
-        </div>
-      </div>
-    </div>
-
-    <div>
-    <div>{{ work.client }}</div>
-    <div>{{ work.subject }}</div>
-    </div>
-
+    {% assign image = work.video-image %}
+    <div class="margin-bottom-1 light-gray-background excerpt" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}"></div>
   </a>
+
+  <h4 class="sans-regular medium-gray">{{ work.title }}</h4>
+  <h5 class="margin-bottom-1">{{ work.description }}</h5>
+  <a href="{{ work.url }}" class="button">Ver testimonio</a>
+
 </div>

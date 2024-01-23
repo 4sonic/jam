@@ -51,22 +51,44 @@
   <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="page">
+<div class="off-canvas-wrapper">
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap" data-close-on-click="false" data-content-scroll="false">
-<div class="grid-y align-center" style="height: 100%;" id="swup-menu">
+<div class="grid-y align-center" style="height: 100%;">
   <div class="shrink cell">
-    <ul class="menu vertical align-center">
-      <li><a href="/nosotros/" class="" data-toggle="offCanvas"><h3 class="primary-font margin-bottom-0">Nosotros</h3></a></li>
-      <li><a href="/servicios/" class="" data-toggle="offCanvas"><h3 class="primary-font margin-bottom-0">Servicios</h3></a></li>
-      <li><a href="/galeria/" class="" data-toggle="offCanvas"><h3 class="primary-font margin-bottom-0">Galeria</h3></a></li>
-      <li><a href="/contacto/" class="" data-toggle="offCanvas"><h3 class="primary-font margin-bottom-0">Contacto</h3></a></li>
-    </ul>
+    <div class="grid-x align-center">
+      <div class="small-12 cell">
+      <ul class="vertical menu accordion-menu text-center" data-accordion-menu>
+        <li><a href="/careers/" class=""><h3 class="white margin-bottom-0">Nuestro equipo</h3></a></li>
+        <li><a href="/work/" class=""><h3 class="white margin-bottom-0">Nuestros pacientes</h3></a></li>
+        <li class="active">
+        <a href="/services/"><h3 class="white margin-bottom-0">Lo que hacemos</h3></a>
+        <ul class="menu vertical">
+        <li><a href="/services/Evaluación-audiológica" class="white">Evaluación audiológica</a></li>
+        <li><a href="/services/audiometría/" class="white">Audiometría</a></li>
+        <li><a href="/services/Logoaudiometría/" class="white">Logoaudiometría</a></li>
+        <li><a href="/services/Impedanciometría/" class="white">Impedanciometría</a></li>
+        <li><a href="/services/Emisiones-otoacústicas/" class="white">Emisiones otoacústicas</a></li>
+        <li><a href="/services/Potenciales-auditivos/" class="white">Potenciales auditivos</a></li>
+        <li><a href="/services/Tamiz-auditivo-neonatal/" class="white">Tamiz auditivo neonatal</a></li>
+        <li><a href="/services/Adaptación-de-auxiliares-auditivos/" class="white">Adaptación de auxiliares auditivos</a></li>
+        <li><a href="/services/implante-coclear/" class="white">Implante coclear</a></li>
+        <li><a href="/services/Dispositivos-óseos-implantables/" class="white">Dispositivos óseos implantables</a></li>
+        <li><a href="/services/Terapia-Auditivo-Verbal/" class="white">Terapia Auditivo Verbal</a></li>
+        </ul>
+        </li>
+        <li><a href="/blog/" class=""><h3 class="white margin-bottom-0">Blog</h3></a></li>
+        <li><a href="/contact/" class=""><h3 class="white margin-bottom-0">Contacto</h3></a></li>
+      </ul>
+      </div>
+    </div>
   </div>
 </div>
 </div>
-<div class="off-canvas-content" data-off-canvas-content id="swup-body">
-<div class="grid-x grid-padding-x padding-vertical-1  align-justify navigation align-middle" id="top">
+<div class="off-canvas-content" data-off-canvas-content>
+<nav>
+<div class="grid-x grid-padding-x padding-vertical-1 align-justify navigation align-middle" id="top">
   <div class="auto cell">
-    <a href="/"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+     <a href="/"><svg class="icon icon-logo-full-color"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo-full-color"></use></svg></a>
   </div>
   <div class="shrink cell">
       <div class="hide-for-large">
@@ -76,23 +98,86 @@
           </span>
         </button>
       </div>
-      <div class="show-for-large margin-bottom-2">
+      <div class="show-for-large">
         <ul class="dropdown menu" data-dropdown-menu>
-          <li><a href="/nosotros/">Nosotros</a></li>
-          <li><a href="/servicios/">Servicios</a></li>
-          <li><a href="/galeria/">Galeria</a></li>
-          <li><a href="/contacto/">Contacto</a></li>
+          <li><a href="/careers/">Nuestro equipo</a></li>
+          <li><a href="/work/">Nuestros pacientes</a></li>
+          <li class="active">
+          <a href="/services/">Lo que hacemos</a>
+          <ul class="vertical menu">
+            <li>
+              <a href="/services/Evaluación-audiológica/">Evaluación audiológica</a>
+              <ul class="nested vertical menu">
+                <li><a href="/services/audiometría/">Audiometría</a></li>
+                <li><a href="/services/Logoaudiometría/">Logoaudiometría </a></li>
+                <li><a href="/services/Impedanciometría/">Impedancionometría</a></li>
+                <li><a href="/services/Emisiones-otoacústicas/">Emisiones otoacústicas</a></li>
+                <li><a href="/services/Potenciales-auditivos/">Potenciales auditivos</a></li>
+              </ul>
+            </li>
+            <li><a href="/services/Tamiz-auditivo-neonatal/">Tamiz auditivo neonatal</a></li>
+            <li><a href="/services/Adaptación-de-auxiliares-auditivos/">Auxiliares auditivos</a></li>
+            <li><a href="/services/implante-coclear/">Implante coclear</a></li>
+            <li><a href="/services/Dispositivos-óseos-implantables/">Dispositivos óseos implantables</a></li>
+            <li><a href="/services/Terapia-Auditivo-Verbal/">Terapia auditivo verbal</a></li>
+          </ul>
+          </li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contacto</a></li>
           <li class="icon-social"><a href="https://www.facebook.com/CrecerOyendo/" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
           <li class="icon-social"><a href="https://www.instagram.com/corti_creceroyendo" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-          <li class="icon-social"><a href="" target="_blank"><svg class="icon icon-whatsapp"><use xlink:href="/assets/icons/symbol-defs.svg#icon-whatsapp"></use></svg></a></li>
+          <li class="icon-social"><a href="http://www.youtube.com/@CORTIMARKETING" target="_blank"><svg class="icon icon-youtube"><use xlink:href="/assets/icons/symbol-defs.svg#icon-youtube"></use></svg></a></li>
         </ul>
       </div>
   </div>
 </div>
-<div class="swup-transition-fade">
+</nav>
+<main>
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-left">
+    <div class="small-12 medium-10 large-9 medium-offset-1 large-offset-1 cell">
+      <h2>Dispositivos óseos implantables</h2>
+      <h3 class="sans-regular medium-gray">La tecnología ideal para restaurar la audición en pacientes con malformaciones de oído o alteraciones crónicas del oído medio.</h3>
+    </div>
+  </div>
+</section>
+<section class="grid-container hide-for-small-only">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      <div data-interchange="[/uploads/dispositivo-oseo-implantable.jpg, small],
+[/uploads/dispositivo-oseo-implantable.jpg, retina],
+[/uploads/dispositivo-oseo-implantable.jpg, medium],
+[/uploads/dispositivo-oseo-implantable.jpg, medium-retina],
+[/uploads/dispositivo-oseo-implantable.jpg, large],
+[/uploads/dispositivo-oseo-implantable.jpg, large-retina],
+[/uploads/dispositivo-oseo-implantable.jpg, xlarge],
+[/uploads/dispositivo-oseo-implantable.jpg, xlarge-retina],
+[/uploads/dispositivo-oseo-implantable.jpg, xxlarge],
+[/uploads/dispositivo-oseo-implantable.jpg, xxlarge-retina]" class="light-gray-background page__image">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="grid-container show-for-small-only">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      <div data-interchange="[/uploads/dispositivo-oseo-implantable.jpg, small],
+[/uploads/dispositivo-oseo-implantable.jpg, retina],
+[/uploads/dispositivo-oseo-implantable.jpg, medium],
+[/uploads/dispositivo-oseo-implantable.jpg, medium-retina],
+[/uploads/dispositivo-oseo-implantable.jpg, large],
+[/uploads/dispositivo-oseo-implantable.jpg, large-retina],
+[/uploads/dispositivo-oseo-implantable.jpg, xlarge],
+[/uploads/dispositivo-oseo-implantable.jpg, xlarge-retina],
+[/uploads/dispositivo-oseo-implantable.jpg, xxlarge],
+[/uploads/dispositivo-oseo-implantable.jpg, xxlarge-retina]" class="page__image">
+      </div>
+    </div>
+  </div>
+</section>
 <section class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 cell">
+    <div class="small-12 medium-10 cell page__content padding-bottom-2">
       <p>Los dispositivos óseos implantables constan de dos componentes. Uno interno que se coloca mediante cirugía  y un procesador externo, que se usa en la parte posterior de la oreja.</p>
 <p><img src="/uploads/dispositivo-oseo-implantable-1.jpg" alt="dispositivo-oseo-implantable-1.jpg" /></p>
 <p>El componente interno se fija al hueso temporal, y su función es convertir todo el sonido (captado por el procesador) en vibraciones, mismas que se van a transmitir directamente a la cóclea. De esta manera garantizamos que el sonido ingrese adecuadamente a la vía auditiva.</p>
@@ -103,18 +188,63 @@ Si quieres más información específica, puedes visitar el siguiente enlace.</p
     </div>
   </div>
 </section>
+<div class="grid-x margin-top-2 light-gray-background" style="min-height: 350px">
+  <div class="small-12 medium-6 cell pagination-image show-for-small-only" data-interchange="[/uploads/tav.jpg, small],
+[/uploads/tav.jpg, retina],
+[/uploads/tav.jpg, medium],
+[/uploads/tav.jpg, medium-retina],
+[/uploads/tav.jpg, large],
+[/uploads/tav.jpg, large-retina],
+[/uploads/tav.jpg, xlarge],
+[/uploads/tav.jpg, xlarge-retina],
+[/uploads/tav.jpg, xxlarge],
+[/uploads/tav.jpg, xxlarge-retina],
+" style="min-height: 350px">
+  </div>
+  <div class="small-12 medium-6 cell padding-space-1">
+    <h5 class="sans-regular medium-gray">Siguiente</h5>
+    <a href="/services/Terapia-Auditivo-Verbal/" class="h5 sans-regular">Terapia Auditivo Verbal</a>
+  </div>
 </div>
-<footer class="grid-x grid-padding-x grid-padding-y align-justify">
-  <div class="small-12 medium-6 large-shrink cell">
-    <ul class="menu">
-      <li><a data-toggle="offCanvasBottom">© Corti Mx</a></li>
-    </ul>
-  </div>
-  <div class="small-12 medium-6 large-shrink cell show-for-medium">
-        <ul class="menu">
-          <li><a href="mailto:contacto@corti.com.mx">contacto@corti.com.mx</a></li>
-        </ul>
-  </div>
+</main>
+<footer class="primary-background-colour grid-x padding-1 align-justify">
+    <div class="small-12 medium-4 cell align-self-bottom show-for-large">
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 medium-12 cell margin-bottom-2" data-smooth-scroll>
+            <a href="#top"><svg class="icon icon-arrow-up8"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-up8"></use></svg></a>
+          </div>
+        </div>
+        <div class="grid-x grid-padding-x grid-padding-y align-bottom">
+          <div class="small-12 medium-12 cell">
+            <a href="/contact">© Corti Mx</a>
+          </div>
+        </div>
+    </div>
+    <div class="small-12 medium-shrink cell align-self-bottom">
+        <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="small-12 medium-shrink cell">
+          <ul class="vertical menu text-center medium-text-left">
+            <li class="menu-text h4 secondary-font">Dirección</a></li>
+            <li class="menu-text">Hospital Real San José Valle Real</li>
+            <li class="menu-text">Torre de consultorios piso 11, 5-A</li>
+            <li class="menu-text">Zapopan, Jalisco</li>
+            <li><a href="tel:3323003976">33-2300-3976</a></li>
+          </ul>
+        </div>
+         <div class="small-12 medium-shrink cell">
+          <ul class="vertical menu text-center medium-text-left">
+            <li class="menu-text h4 secondary-font">Permisos</a></li>
+            <li class="menu-text">Responsable Sanitario</li>
+            <li class="menu-text">Dra. Noemi Hernández Altamirano</li>
+            <li class="menu-text">Médico Cirujano y Partero / 4083008 / UdeG
+</li>
+            <li><a href="tel:+13237856313">Comunicación Audiología y Foniatría / 5472078 / UNAM</a></li>
+            <li class="menu-text">Certificado CONACEM / 528</li>
+            <li class="menu-text">COFEPRIS: 2314102002A00354.</li>
+          </ul>
+        </div>
+        </div>
+    </div>
 </footer>
 </div>
 </body>

@@ -1,8 +1,34 @@
-- title: Nosotros
-  url: /nosotros/
-- title: Servicios
-  url: /servicios/
-- title: Galeria
-  url: /galeria/
+
+- title: Nuestro equipo
+  url: /careers/
+- title: Nuestros pacientes
+  url: /work/
+- title: Lo que hacemos
+  url: /services/
+  sublinks:
+    - title: Evaluación audiológica
+      url: /services/Evaluación-audiológica
+    - title: Audiometría
+      url: /services/audiometría/
+    - title: Logoaudiometría
+      url: /services/Logoaudiometría/
+    - title: Impedanciometría
+      url: /services/Impedanciometría/
+    - title: Emisiones otoacústicas
+      url: /services/Emisiones-otoacústicas/
+    - title: Potenciales auditivos
+      url: /services/Potenciales-auditivos/
+    - title: Tamiz auditivo neonatal
+      url: /services/Tamiz-auditivo-neonatal/
+    - title: Adaptación de auxiliares auditivos
+      url: /services/Adaptación-de-auxiliares-auditivos/
+    - title: Implante coclear
+      url: /services/implante-coclear/
+    - title: Dispositivos óseos implantables
+      url: /services/Dispositivos-óseos-implantables/
+    - title: Terapia Auditivo Verbal
+      url: /services/Terapia-Auditivo-Verbal/
+- title: Blog
+  url: /blog/
 - title: Contacto
-  url: /contacto/
+  url: /contact/

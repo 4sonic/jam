@@ -1,10 +1,10 @@
 {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
 
 <!-- Navigation -->
-<div class="grid-x grid-padding-x padding-vertical-1  align-justify navigation align-middle" id="top">
+<div class="grid-x grid-padding-x padding-vertical-1 align-justify navigation align-middle" id="top">
 
   <div class="auto cell">
-    <a href="/"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+     <a href="/"><svg class="icon icon-logo-full-color"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo-full-color"></use></svg></a>
   </div>
 
   <div class="shrink cell">
@@ -17,7 +17,7 @@
         </button>
       </div>
 
-      <div class="show-for-large margin-bottom-2">
+      <div class="show-for-large">
         <ul class="dropdown menu" data-dropdown-menu>
           {% for entry in site.data.navigation %}
           {% if entry.url == current_page %}
@@ -29,10 +29,22 @@
           {% if sublinks %}
           <li{{ current }}>
           <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-          <ul class="menu">
-          {% for sublink in sublinks %}
-          <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-          {% endfor %}
+          <ul class="vertical menu">
+            <li>
+              <a href="/services/Evaluación-audiológica/">Evaluación audiológica</a>
+              <ul class="nested vertical menu">
+                <li><a href="/services/audiometría/">Audiometría</a></li>
+                <li><a href="/services/Logoaudiometría/">Logoaudiometría </a></li>
+                <li><a href="/services/Impedanciometría/">Impedancionometría</a></li>
+                <li><a href="/services/Emisiones-otoacústicas/">Emisiones otoacústicas</a></li>
+                <li><a href="/services/Potenciales-auditivos/">Potenciales auditivos</a></li>
+              </ul>
+            </li>
+            <li><a href="/services/Tamiz-auditivo-neonatal/">Tamiz auditivo neonatal</a></li>
+            <li><a href="/services/Adaptación-de-auxiliares-auditivos/">Auxiliares auditivos</a></li>
+            <li><a href="/services/implante-coclear/">Implante coclear</a></li>
+            <li><a href="/services/Dispositivos-óseos-implantables/">Dispositivos óseos implantables</a></li>
+            <li><a href="/services/Terapia-Auditivo-Verbal/">Terapia auditivo verbal</a></li>
           </ul>
           </li>
           {% else %}
@@ -41,7 +53,7 @@
           {% endfor %}
           <li class="icon-social"><a href="{{site.social.facebook}}" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
           <li class="icon-social"><a href="{{site.social.instagram}}" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-          <li class="icon-social"><a href="{{site.social.whatsapp}}" target="_blank"><svg class="icon icon-whatsapp"><use xlink:href="/assets/icons/symbol-defs.svg#icon-whatsapp"></use></svg></a></li>
+          <li class="icon-social"><a href="{{site.social.youtube}}" target="_blank"><svg class="icon icon-youtube"><use xlink:href="/assets/icons/symbol-defs.svg#icon-youtube"></use></svg></a></li>
         </ul>
       </div>
 

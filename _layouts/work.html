@@ -1,63 +1,58 @@
 ---
 layout: default
 ---
-<!-- Page Image -->
-{% if page.image %}
+<!-- Hero -->
+{% assign background-image = page.hero-image %}
+<section class="hero" {% include images/feature.html %}>
+  <div class="grid-x align-middle align-center" style="height: 100%;">
+    <div class="small-10  medium-8 large-6 cell text-center">
+      <h1 class="primary-font white" data-aos="none">{{page.hero-text}}</h1>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<!-- Projects Intro -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center padding-vertical-space-1">
+    <div class="small-12 medium-12 cell text-center">
+      <h3>{{page.header}}</h3>
+    </div>
+  </div>
+</div>
+<!-- End Projects Intro -->
+
+<!-- Page Content -->
+{% if page.content %}
 <section class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 cell">
-
-      {% assign image = page.image %}
-      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="image">
-        {% if page.video %}
-        <div class="grid-y height-100 align-center video content">
-          <div class="shrink cell text-center" data-src="{{page.video}}">
-            <a href="{{page.video}}" class="white"><svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg></a>
-            <p class="white">Ver video</p>
-          </div>
-        </div>
-        {% endif %}
-      </div>
-
+    <div class="small-12 medium-10 cell page__content padding-bottom-2">
+      {{ page.content | replace: "/uploads", "https://earn-studios.imgix.net/uploads" | markdownify }}
     </div>
   </div>
 </section>
 {% endif %}
-<!-- End Page Image -->
+<!-- End Page Content -->
 
-<!-- Services Intro -->
-<section class="grid-container margin-top-2 margin-bottom-2" data-aos="none">
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 large-10 cell text-center">
-      <h4>{{page.intro-text | markdownify}}</h4>
+<!-- Home Selected Projects -->
+<div class="grid-container">
+
+  <div class="grid-x">
+    <div class="small-12 medium-8 cell">
+      <h2>{{page.selected-text}}</h2>
     </div>
   </div>
-</section>
-<!-- End Services Intro -->
 
-
-<!-- Works -->
-<div class="grid-container margin-bottom-2">
-  <div class="grid-x grid-padding-x grid-padding-y">
-    {% assign works = site.work | where: "is-service", "true" %}
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
+    {% assign works = paginator.posts | where: "is-video-selected", "true" %}
     {% for work in works %}
       {% include blocks/excerpt.html %}
     {% endfor %}
   </div>
-</div>
-<!-- End Works -->
 
-<!-- Page Quote -->
-{% if page.quote %}
-<section class="light-gray-background">
-  <div class="grid-container padding-vertical-3">
-    <div class="grid-x grid-padding-x grid-padding-y">
-      <div class="small-12 medium-8 cell">
-        <h4>{{ page.quote }}</h4>
-        <h4 class="sans-regular medium-gray"><a href="mailto:info@bordaindustrial.com">{{ page.mail }}</a></h4>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
-<!-- End Page Quote -->
+</div>
+<!-- End Home Selected Projects -->
+
+<!-- Pagination -->
+{% include pagination/collection.html %}
+<!-- End Pagination -->

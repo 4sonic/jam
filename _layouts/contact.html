@@ -1,0 +1,189 @@
+---
+layout: default
+---
+<!-- Contact Hero -->
+{% assign background-image = page.hero-image %}
+<section class="hero" {% include images/feature.html %}>
+  <div class="grid-x align-middle align-center" style="height: 100%;">
+    <div class="small-10  medium-8 large-6 cell text-center">
+      <h1 class="primary-font white" data-aos="none">{{page.hero-text}}</h1>
+    </div>
+  </div>
+</section>
+<!-- End Contact Hero -->
+
+<!-- New Contacts -->
+<div class="grid-container">
+  {% for location in page.locations %}
+    <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1">
+
+      <div class="small-12 medium-7 cell">
+        <div id="map" style="width: 100%; height: 20rem" class="margin-bottom-1"></div>
+      </div>
+
+      <div class="small-12 medium-5 cell">
+          <div class="cell contact__enquiry">
+            <h3>{{ location.title }}</h4>
+            {{ location.address-text | markdownify }}
+            {% if location.directions %}<div><a href="{{ location.directions }}" class="underline">Citas</a></div>{% endif %}
+            <div><a href="tel:{{ location.phone }}" class="underline">{{ location.phone }}</a></div>
+            <div><a href="https://wa.me/523331910207" class="underline">WhatsApp</a></div>
+            <div><a href="tel:{{ location.phone }}" class="underline">{{ location.whatsup }}</a></div>
+
+          </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+<!-- End New Contacts -->
+
+<!-- Hire Us Intro -->
+<section class="grid-container" data-aos="none">
+  <div class="grid-x grid-padding-x grid-padding-y align-left">
+    <div class="small-12 medium-10 large-8 cell text-left">
+      {{page.content | markdownify}}
+    </div>
+  </div>
+</section>
+<!-- End Hire Us Intro -->
+
+
+<form name="hire-us" method="POST" netlify-honeypot="bot-field" netlify>
+
+  <div class="hide">
+  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </div>
+
+  <div class="grid-container padding-bottom-2" data-aos="none">
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-6 cell">
+        <label>Nombre
+          <input type="text" name="Nombre">
+        </label>
+      </div>
+
+      <div class="small-12 medium-6 cell">
+        <label>Correo electrónico
+          <input type="email" name="Email">
+        </label>
+      </div>
+      <div class="small-12 medium-6 cell">
+        <label>Número de teléfono
+          <input type="text" name="Número de teléfono">
+        </label>
+      </div>
+
+      <div class="small-12 medium-6 cell">
+        <label>Ciudad
+          <input type="text" name="Ciudad">
+        </label>
+      </div>
+      <div class="small-12 medium-12 cell">
+        <label>Cuéntanos más
+          <textarea rows="12" name="Notes" placeholder="Cuéntanos tus dudas, o déjanos un comentario acerca de tu experiencia"></textarea>
+        </label>
+      </div>
+
+      <div class="small-12 medium-12 cell">
+      <input type="submit" class="button" value="Enviar">
+      </div>
+
+    </div>
+  </div>
+</form>
+
+
+
+<script>
+mapboxgl.accessToken = "pk.eyJ1IjoiNHNvbmljIiwiYSI6ImNqbWd5NzV0aDA0Y2wzdm9tcW56bXQ5dm8ifQ.c1Z8TPxEqiegrleIGQyFog";
+
+/* Map: This represents the map on the page. */
+var map = new mapboxgl.Map({
+container: "map",
+style: "mapbox://styles/mapbox/streets-v11",
+zoom: 14,
+center: [-103.4307283, 20.7219272]
+});
+
+map.on("load", function () {
+/* Image: An image is loaded and added to the map. */
+map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+if (error) throw error;
+map.addImage("custom-marker", image);
+/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+map.addLayer({
+id: "markers",
+type: "symbol",
+/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+source: {
+type: "geojson",
+data: {
+type: 'FeatureCollection',
+features: [
+{
+type: 'Feature',
+properties: {},
+geometry: {
+type: "Point",
+coordinates: [-103.4307283, 20.7219272]
+}
+}
+]
+}
+},
+layout: {
+"icon-image": "custom-marker",
+}
+});
+});
+});
+
+
+
+
+
+
+
+
+/* Map: This represents the map on the page. */
+var map2 = new mapboxgl.Map({
+  container: "map2",
+  style: "mapbox://styles/mapbox/streets-v11",
+  zoom: 14,
+  center: [-100.3013,25.65]
+});
+
+map2.on("load", function () {
+  /* Image: An image is loaded and added to the map. */
+  map2.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+      if (error) throw error;
+      map2.addImage("custom-marker", image);
+      /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+      map2.addLayer({
+        id: "markers",
+        type: "symbol",
+        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+        source: {
+          type: "geojson",
+          data: {
+            type: 'FeatureCollection',
+            features: [
+              {
+                type: 'Feature',
+                properties: {},
+                geometry: {
+                  type: "Point",
+                  coordinates: [-100.3015, 25.6511]
+                }
+              }
+            ]
+          }
+        },
+        layout: {
+          "icon-image": "custom-marker",
+        }
+      });
+    });
+});
+</script>
