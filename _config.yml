@@ -103,10 +103,6 @@ logo: "/assets/img/logo.svg"
 per_page: 12
 date_format: "%b %Y"
 future: true
-sponsors:
-  phonak: https://www.phonak.com/mx/es.html
-  cochlear: https://www.cochlear.com/es/es/home
-  ab: https://www.advancedbionics.com/latam/es/home.html
 social:
   facebook: https://www.facebook.com/CrecerOyendo/
   instagram: https://www.instagram.com/corti_creceroyendo
