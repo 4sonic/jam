@@ -1,6 +1,6 @@
 ---
 title: Hola. Soy Noemí, y soy audióloga.
-image: "/uploads/post-2.jpg"
+thumbnail: "/uploads/post-2.jpg"
 video: https://youtu.be/RgMbNaS-f2U
 date: 2024-01-05 11:06:00 Z
 layout: post
