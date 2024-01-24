@@ -1,6 +1,6 @@
 ---
 title: ¡Bienvenidas y bienvenidos!
-thumbnail: "/uploads/01.jpg"
+image: "/uploads/01.jpg"
 date: 2024-01-01 11:04:00 Z
 layout: post
 ---

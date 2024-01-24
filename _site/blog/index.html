@@ -47,7 +47,7 @@
 </script>
   <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body class="blog">
+<body class="blog-test">
 <div class="off-canvas-wrapper">
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap" data-close-on-click="false" data-content-scroll="false">
 <div class="grid-y align-center" style="height: 100%;">
@@ -130,32 +130,47 @@
 </div>
 </nav>
 <main>
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
-    <div class="cell">
-      <div class="card">
-        <img src="/uploads/post-2.jpg" alt="Hola. Soy Noemí, y soy audióloga.">
-        <div class="card-section">
-                <section class="excerpt__meta">
-        <ul class="menu simple expanded excerpt__tags">
-        </ul>
-      </section>
-        </div>
-      </div>
-    </div>
-    <div class="cell">
-      <div class="card">
-        <img src="/uploads/01.jpg" alt="¡Bienvenidas y bienvenidos!">
-        <div class="card-section">
-                <section class="excerpt__meta">
-        <ul class="menu simple expanded excerpt__tags">
-        </ul>
-      </section>
-        </div>
-      </div>
+<section class="hero" data-interchange="
+[/uploads/blog-hero.jpg, small],
+[/uploads/blog-hero.jpg, medium]
+[/uploads/blog-hero.jpg, large]
+[/uploads/blog-hero.jpg, xlarge]
+[/uploads/blog-hero.jpg, xxlarge]"
+>
+  <div class="grid-x align-middle align-center" style="height: 100%;">
+    <div class="small-10  medium-8 large-6 cell text-center">
+      <h1 class="primary-font white" data-aos="none">“De mi puño y letra” By Noemí Hernández.</h1>
     </div>
   </div>
+</section>
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y medium-up-2 large-up-3">
+    <div class="small-11 cell journal__post" data-aos="fade-in">
+    <img src="/uploads/post-2.jpg" alt=""class="margin-bottom-3">
+    <br>
+    <div class="journal__post__date">Jan 2024</div>
+    <a href="/2024/01/05/hola-soy-noemi/"><h4>Hola. Soy Noemí, y soy audióloga.</h4></a>
+     Siempre que yo voy a ir a consulta con un médico nuevo, cada vez que yo debo ponerme en las manos de alguien, me gusta...
+     <div class="shrink cell text-center" data-src="">
+     </div>
+    </div>
+    <div class="small-11 cell journal__post" data-aos="fade-in">
+    <img src="/uploads/01.jpg" alt=""class="margin-bottom-3">
+    <br>
+    <div class="journal__post__date">Jan 2024</div>
+    <a href="/2024/01/01/bienvenidas-y-bienvenidos/"><h4>¡Bienvenidas y bienvenidos!</h4></a>
+     Hello, hello!!! Me da muchísimo gusto que estés visitándome. En esta sección me daré el lujo de escribir de mi puño y letra, con la...
+     <div class="shrink cell text-center" data-src="">
+     </div>
+    </div>
 </div>
+</div>
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell page__content padding-bottom-2">
+    </div>
+  </div>
+</section>
 </main>
 <footer class="primary-background-colour grid-x padding-1 align-justify">
     <div class="small-12 medium-4 cell align-self-bottom show-for-large">
