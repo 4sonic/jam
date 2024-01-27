@@ -2,7 +2,7 @@
 title: Dra. Martha Parra Cárdenas
 position: 8
 image: "/uploads/martha.jpg"
-about-description: Médica especialista en Otorrinolaringología
+about-description: Médica Especialista en Otorrinolaringología
 skills-description: Especialista en Otorrinolaringología y Cirugía de cabeza y cuello
 is-bottom: true
 

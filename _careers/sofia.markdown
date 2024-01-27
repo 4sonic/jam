@@ -2,8 +2,8 @@
 title: Dra. Sofía García de Quevedo Iturbide
 position: 9
 image: "/uploads/DraSofia.jpg"
-about-description: Médica Pediatra
-skills-description: <br>
+about-description: Médica Especialista en Pédiatria
+skills-description: Subespecialista en Neonatología
 is-bottom: true
 ---
 ![new.jpg](/uploads/DraSofia.jpg)

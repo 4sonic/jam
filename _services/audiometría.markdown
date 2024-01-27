@@ -10,13 +10,15 @@ video-image:
 video: https://youtu.be/x0rt5265AJM
 is-video-selected: true
 ---
-#### ¿Qué es una audiometría?
+**¿Qué es una audiometría?**
+
 La Audiometría es el estudio estándar de oro para evaluar la audición en una persona; nos permite saber cuánto escucha una persona en términos de volumen, o sea, en decibeles (dB) y si está percibiendo adecuadamente  todos los diferentes tonos del sonido, o sea las frecuencias (medidas en Hertz, Hz).
 
 
 ![audiometria.jpg](/uploads/audiometria.jpg)
 
-#### ¿Cómo se hacen las audiometrías?
+**¿Cómo se hacen las audiometrías?**
+
 Con el fin de lograr el aislamiento del ruido ambiental y asegurar la objetividad en las mediciones,  el paciente entra a una cabina sono-amortiguada y en ese entorno controlado, se le solicita que indique cuando detecte los sonidos  que se envían desde el audiómetro. De esta manera podemos registrar los umbrales auditivos, es decir, la intensidad más pequeña de sonido que una persona puede percibir. Así es como se mide la audición.
 
 Las audiometrías requieren de la cooperación del paciente y hay diferentes versiones dependiendo de la edad.
