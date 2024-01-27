@@ -64,12 +64,8 @@ defaults:
     cite:
     layout: page
 
-quote: EARN have helped transform our culture to live and breathe innovative thinking.
-  We have happy people who are delivering great results.
-cite: Peter Harding, CEO, Lucozade Ribena Suntory
-url: https://www.earnstudios.com
-description: Earn Studios is an innovation consultancy that helps companies create
-  share-worthy products
+url:
+description:
 permalink: pretty
 exclude:
 - bower.json
@@ -98,8 +94,8 @@ highlighter: rouge
 colophon:
 company: CORTI MX
 email: contacto@corti.com.mx
-analytics: UA-84661141-1
-logo: "/assets/img/logo.svg"
+analytics:
+logo:
 per_page: 12
 date_format: "%b %Y"
 future: true
