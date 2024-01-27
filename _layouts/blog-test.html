@@ -88,14 +88,21 @@ layout: default
 
 <!-- Journal -->
 <div class="grid-container">
-<div class="grid-x grid-padding-x grid-padding-y medium-up-2 large-up-3">
+<div class="grid-x grid-padding-x grid-padding-y medium-up-2 large-up-2">
   {% for post in site.posts limit:site.per_page %}
     <div class="small-11 cell journal__post" data-aos="fade-in">
-    <img src="{{ post.image }}" alt=""class="margin-bottom-3">
+
     <br>
-    <div class="journal__post__date">{{ post.date | date: site.date_format }}</div>
-    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-     {{ post.content | strip_html | truncatewords:25 }}
+    <div class="journal__post__date"><small>{{ post.date | date: site.date_format }}</small></div>
+
+    <h4 class="strong">{{ post.title }}</h4>
+      <img src="{{ post.image }}" alt=""class="margin-bottom-1 margin-top-1">
+      {{ post.content | strip_html | truncatewords:50 }}
+      {% if post.excerpt != post.content %}
+          <a href="{{ site.baseurl }}{{ post.url }}">Leer más</a>
+      {% endif %}
+
+
      <div class="shrink cell text-center" data-src="{{page.video}}">
      </div>
     </div>
