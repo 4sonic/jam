@@ -386,60 +386,42 @@
 		"oAP": "\/_posts\/2022-10-25-hola-soy-noemi.markdown",
 		"oF": 0
 		},
-	"\/_posts\/2024-01-30-test-new-post.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/_posts\/2024-01-30-test-new-post.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/_services\/Adaptación-de-auxiliares-auditivos.markdown": {
+	"\/_services\/Adaptación-de-auxiliares-auditivos.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_services\/Adaptación-de-auxiliares-auditivos.markdown",
 		"oF": 0
 		},
-	"\/_services\/audiometría.markdown": {
+	"\/_services\/audiometría.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_services\/audiometría.markdown",
 		"oF": 0
 		},
-	"\/_services\/Dispositivos-óseos-implantables.markdown": {
+	"\/_services\/Dispositivos-óseos-implantables.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_services\/Dispositivos-óseos-implantables.markdown",
 		"oF": 0
 		},
-	"\/_services\/Emisiones-otoacústicas.markdown": {
+	"\/_services\/Emisiones-otoacústicas.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_services\/Emisiones-otoacústicas.markdown",
 		"oF": 0
 		},
-	"\/_services\/Evaluación-audiológica.markdown": {
+	"\/_services\/Evaluación-audiológica.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_services\/Evaluación-audiológica.markdown",
 		"oF": 0
 		},
-	"\/_services\/Impedanciometría.markdown": {
+	"\/_services\/Impedanciometría.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
@@ -453,7 +435,7 @@
 		"oAP": "\/_services\/implante-coclear.markdown",
 		"oF": 0
 		},
-	"\/_services\/Logoaudiometría.markdown": {
+	"\/_services\/Logoaudiometría.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
@@ -520,13 +502,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_work\/ximena.markdown",
-		"oF": 0
-		},
-	"\/admin\/config.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/admin\/config.yml",
 		"oF": 0
 		},
 	"\/admin\/index.html": {
