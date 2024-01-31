@@ -23,19 +23,19 @@ Con el fin de lograr el aislamiento del ruido ambiental y asegurar la objetivida
 
 Las audiometrías requieren de la cooperación del paciente y hay diferentes versiones dependiendo de la edad.
 
-#### Audiometría para adultos
+# Audiometría para adultos
 
 ![audiometria-adultos.jpg](/uploads/audiometria-para-adultos.jpg)
 
 Al  paciente se le colocan unos audífonos por donde escuchará los sonidos, y recibe un indicador manual que presiona cada vez que “escucha” un sonido. Una vez que el paciente identificó los estímulos, se va bajando discretamente la intensidad (dB), para encontrar el umbral en cada uno de los tonos (Hz) de la audiometría.
 
-#### Audiometría condicionada por juego  (en niños de 2.5 años en adelante)
+# Audiometría condicionada por juego  (en niños de 2.5 años en adelante)
 
 ![audiometria-condicionada-con-juego.jpg](/uploads/audiometria-condicionada-con-juego.jpg)
 
 Las evaluaciones en niños pequeños suelen hacerse a través del juego.  El paciente deberá tener audífonos y “jugando” se le entrena para que nos indique cada vez que escucha un sonido.  Por ejemplo, “cada vez que escuches un ruidito, debes poner un huevo dentro de la canasta”. Para esta modalidad de audiometría se requiere que el niño tenga periodos de atención suficientes para jugar una actividad completa, que pueda aprender indicaciones sencillas, y sobre todo, que quiera hacerlo; aunque siempre tenemos “truquitos” para conquistarlos  😉
 
-#### Audiometría con reforzamiento visual en niños de 6 meses a 2.5 años
+# Audiometría con reforzamiento visual en niños de 6 meses a 2.5 años
 
 Cuando los niños son demasiado pequeños, o cuando coexiste algún otro tipo de discapacidad motora o intelectual, la información de la conducta auditiva se obtiene mediante un condicionamiento visual al estilo Pavlov.  
 
@@ -45,7 +45,7 @@ Mientras el niño o niña está entretenid@ viendo a algún juguete en frente, s
 Para hacer este estudio a veces se requieren varias sesiones, porque no siempre se logra encontrar los umbrales a todas las frecuencias de sonidos. Y aunque es un estudio subjetivo (porque depende de la cooperación del paciente), la información que se obtiene es muy valiosa para la integración de un diagnóstico audiológico preciso.
 La edad en la que se puede empezar a intentar este tipo de audiometría, es cuando el niño logra sentarse solo, es decir, cuando tiene control motor de tronco, y eso sucede aproximadamente a los 6 meses de edad.
 
-#### Audiometría por observación del comportamiento en niños de 0 a 6 meses
+# Audiometría por observación del comportamiento en niños de 0 a 6 meses
 
 ![audiometria-por-observacion.jpg](/uploads/audiometria-por-observacion.jpg)
 

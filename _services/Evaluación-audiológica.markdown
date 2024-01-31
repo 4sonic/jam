@@ -3,7 +3,7 @@ title: Evaluación audiológica
 date: 2018-12-12 12:39:00 Z
 position: 1
 about-description: La evaluación de pacientes con pérdida auditiva es toda un área de especialización en medicina, y es realizada por un Médico Audiólogo.
-image: "/uploads/valoración-audiologica.jpg"
+image: "/uploads/valoracion-audiologica.jpg"
 video-image: "/uploads/valoración-audiologica.jpg"
 video: https://youtu.be/t5vHQBSKPkw
 is-video-selected: true

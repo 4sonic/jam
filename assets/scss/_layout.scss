@@ -75,6 +75,10 @@ svg {
   }
 }
 
+h1 {
+  font-weight: bold;
+}
+
 p {
   font-size: 18px;
 }
@@ -280,7 +284,7 @@ p {
 footer {
   border-top: 2px solid $light-gray;
   color: $white;
-  @include links ($white, $yellow);
+  @include links ($yellow, $white);
 }
 // 8. Layout
 // ---------

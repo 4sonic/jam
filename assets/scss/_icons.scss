@@ -39,6 +39,10 @@ Single-colored icons can be modified like so:
   font-size: 2.5rem;
 }
 
+.icon-whatsapp{
+  font-size: 1.5rem;
+}
+
 .icon-play-circle {
   @include breakpoint(small) {
     font-size: 4rem;
