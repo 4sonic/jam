@@ -1,45 +1,32 @@
 ---
 layout: default
-title: Galeria
 ---
-
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
-    {% for post in site.posts %}
-    <div class="cell">
-      <div class="card">
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
-        <div class="card-section">
-                <section class="excerpt__meta">
-      {% if post.categories or post.tags %}
-        <ul class="menu simple expanded excerpt__tags">
-          {% for post_category in post.categories %}
-            {% assign post_category_downcase = post_category | downcase | replace: ' ', '-' %}
-            {% for site_category in site.blog_categories %}
-              {% assign site_category_title = site_category.title | downcase | replace: ' ', '-' %}
-              {% if site_category_title == post_category_downcase %}
-                <li class="excerpt__category"><a href="{{ site_category.permalink }}" class="excerpt__category__link{% if site_category.color %} {{site_category.color}}{% endif %}">{{ site_category.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-
-          {% for post_tag in post.tags %}
-            {% assign post_tag_downcase = post_tag | downcase %}
-            {% for site_tag in site.blog_tags %}
-              {% assign site_tag_title = site_tag.title | downcase %}
-              {% if site_tag_title == post_tag_downcase %}
-                <li><a href="{{ site_tag.permalink }}">{{ site_tag.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-
-        </ul>
-      {% endif %}
-      </section>
-        </div>
-      </div>
-
+<!-- Hero -->
+{% assign background-image = page.hero-image %}
+<section class="hero" {% include images/feature.html %}>
+  <div class="grid-x align-middle align-center" style="height: 100%;">
+    <div class="small-10  medium-8 large-6 cell text-center">
+      <h1 class="primary-font white" data-aos="none">{{page.hero-text}}</h1>
     </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<!-- Home Selected Projects -->
+<div class="grid-container">
+
+  <div class="grid-x">
+    <div class="small-12 medium-8 cell">
+      <h2>{{page.selected-text}}</h2>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
+
+    {% for post in site.posts %}
+      {% include blocks/posts.html %}
     {% endfor %}
   </div>
+
 </div>
+<!-- End Home Selected Projects -->

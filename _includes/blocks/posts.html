@@ -1,0 +1,10 @@
+<div class="cell">
+  <a href="{{ post.url }}">
+    {% assign image = post.image %}
+    <div class="margin-bottom-1 light-gray-background excerpt" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}"></div>
+  </a>
+
+  <h2 class="sans-regular medium-gray">{{ post.title }}</h2>
+  <p class="margin-bottom-1">{{ post.content | strip_html | truncatewords:25 }}&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">Leer más</a></p>
+
+</div>

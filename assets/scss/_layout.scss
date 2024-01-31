@@ -621,3 +621,18 @@ color: $black;
 .margin-bottom-3{
   @include margin-three;
   }
+
+  .post__image {
+    @include breakpoint(small) {
+      height: 30vh;
+    }
+    @include breakpoint(medium) {
+      height: 50vh;
+    }
+    @include breakpoint(large) {
+      height: 70vh;
+    }
+    background-size: cover;
+    background-position: 50%;
+    background-color: $light-gray;
+  }
