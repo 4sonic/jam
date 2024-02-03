@@ -288,6 +288,13 @@
 		"oAP": "\/_layouts\/compress.html",
 		"oF": 0
 		},
+	"\/_layouts\/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/contact.html",
+		"oF": 0
+		},
 	"\/_layouts\/default.html": {
 		"cB": 0,
 		"ft": 8192,
