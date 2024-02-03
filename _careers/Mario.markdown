@@ -6,7 +6,7 @@ about-description: Terapeuta de Lenguaje.
 skills-description: Certificado en Vital Stim, K-taping y Prompt
 is-bottom: true
 ---
-![MarioDiaz.jpg](/uploads/MarioDiaz.jpg)
+![Mario.jpg](/uploads/Mario.jpg)
 
 Mario se destaca como el terapeuta de lenguaje más ingenioso, alivianado y maravilloso en el trabajo con niños. Posee habilidades extraordinarias para establecer empatía con los pequeños, cautivándolos durante las sesiones terapéuticas y logrando con éxito todos los objetivos propuestos.
 
