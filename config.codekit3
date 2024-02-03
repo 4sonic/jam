@@ -288,13 +288,6 @@
 		"oAP": "\/_layouts\/compress.html",
 		"oF": 0
 		},
-	"\/_layouts\/contact.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/contact.html",
-		"oF": 0
-		},
 	"\/_layouts\/default.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -385,6 +378,24 @@
 		"oA": 2,
 		"oAP": "\/_posts\/2022-10-25-hola-soy-noemi.markdown",
 		"oF": 0
+		},
+	"\/_posts\/2024-01-30-test-new-post.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/_posts\/2024-01-30-test-new-post.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/_services\/Adaptación-de-auxiliares-auditivos.markdown": {
 		"cB": 0,
@@ -502,6 +513,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_work\/ximena.markdown",
+		"oF": 0
+		},
+	"\/admin\/config.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/admin\/config.yml",
 		"oF": 0
 		},
 	"\/admin\/index.html": {
@@ -10731,7 +10749,7 @@
 		},
 	"\/uploads\/dispositivo-oseo-implantable.jpg": {
 		"ft": 16384,
-		"iS": 63425,
+		"iS": 182121,
 		"oA": 0,
 		"oAP": "\/uploads\/dispositivo-oseo-implantable.jpg",
 		"oF": 0,
@@ -10819,11 +10837,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/uploads\/foto-de-impedanciometría.jpg": {
+	"\/uploads\/foto-de-impedanciometria.jpg": {
 		"ft": 16384,
 		"iS": 1217012,
 		"oA": 0,
-		"oAP": "\/uploads\/foto-de-impedanciometría.jpg",
+		"oAP": "\/uploads\/foto-de-impedanciometria.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

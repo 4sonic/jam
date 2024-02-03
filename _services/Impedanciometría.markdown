@@ -14,7 +14,7 @@ La timpanometría es un estudio que nos permite conocer la función del oído me
 
 Una alteración de la función del oído medio suele indicar que hay una obstrucción al paso del sonido, y una vez definida la causa de la obstrucción, se puede resolver mediante un tratamiento específico.
 
-![foto-de-impedanciometría.jpg](/uploads/foto-de-impedanciometría.jpg)
+![foto-de-impedanciometria.jpg](/uploads/foto-de-impedanciometria.jpg)
 
 Mediante este estudio podemos determinar también si están presentes los reflejos estapediales, que son un reflejo de protección ante sonidos intensos, y se originan mediante vías de conexión cruzada con el tallo cerebral.
 
