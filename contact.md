@@ -9,7 +9,7 @@ locations:
   directions: https://goo.gl/maps/VQfTBakak3B2
   location: "-103.4307283, 20.7219272"
   phone: "+52 33-2300-3976"
-  whatsup: "+52 33-2634-5842"
+  whatsapp: "+52 33-2634-5842"
 enquiries:
 - title: New Business
   text: |-

@@ -25,10 +25,13 @@ layout: default
           <div class="cell contact__enquiry">
             <h3>{{ location.title }}</h4>
             {{ location.address-text | markdownify }}
-            {% if location.directions %}<div><a href="{{ location.directions }}" class="underline">Citas</a></div>{% endif %}
+            {% if location.directions %}
+            <h5>CITAS</h5>
+            {% endif %}
             <div><a href="tel:{{ location.phone }}" class="underline">{{ location.phone }}</a></div>
-            <div><a href="https://wa.me/523331910207" class="underline">WhatsApp</a></div>
-            <div><a href="tel:{{ location.phone }}" class="underline">{{ location.whatsup }}</a></div>
+            <h5 class="margin-top-1">WHATSAPP</h5>
+            <div><a href="https://wa.me/523331910207" class="underline">{{ location.whatsapp }}</a></div>
+
 
           </div>
       </div>
