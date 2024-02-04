@@ -10300,7 +10300,12 @@ p {
   color: #FFCC01; }
 
 .menu .menu-text {
-  font-weight: normal; }
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 0.5em; }
+  @media print, screen and (min-width: 40em) {
+    .menu .menu-text {
+      font-size: 16px; } }
 
 strong,
 b {
