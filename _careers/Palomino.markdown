@@ -1,5 +1,5 @@
 ---
-title: Dr. Juan Manuel Palomino Altamirano
+title: Dr. Juan Francisco Palomino Altamirano
 position: 10
 image: "/uploads/Dr.Palomino.jpg"
 about-description: Médico Anestesiólogo
