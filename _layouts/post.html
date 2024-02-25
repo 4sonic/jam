@@ -11,10 +11,10 @@ layout: default
       <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="light-gray-background page__image">
 
       {% if page.video %}
-      
+      {% assign svg.icon.icon-play-circle  = page.video %}
       <div class="grid-y height-100 align-center video">
         <div class="shrink cell text-center" data-src="{{page.video}}">
-          {% assign svg.icon.icon-play-circle  = page.video %}
+        
           <a href="{{page.video}}" class="white"><svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg><br><h2>Ver vídeo</h2></a>
 
         </div>
