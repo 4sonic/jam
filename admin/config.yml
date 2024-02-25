@@ -14,8 +14,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titulo", name: "title", widget: "string", tagname: "h1"}
       - {label: "Imagen", name: "image", widget: "image"}
+
       
-      - {label: "URL del video en Youtube", name: "has-video", widget: "string"}
+
+      
+      - {label: "URL del video en Youtube", name: "has-video", widget: "boolean", default: false}
+      - {label: "Video", name: "video", widget: "string"}
       - {label: "Tiene comentarios habilitados?", name: "comments", widget: "select", options: ["true", "false"]}
       - {label: "Contenido del POst", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
