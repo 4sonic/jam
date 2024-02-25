@@ -3,8 +3,6 @@ title: Hola. Soy Noemí, y soy audióloga.
 image: "/uploads/post-2.jpg"
 video: https://youtu.be/RgMbNaS-f2U
 date: 2024-01-05 11:06:00 Z
-comments: true
-layout: post
 ---
 
 Siempre que yo voy a ir a consulta con un médico nuevo, cada vez que yo debo ponerme en las manos de alguien,  me gusta saber santo y seña de ella o él, conocer lo más relevante  de su CV,  escuchar las recomendaciones de personas que le conocen, y desde que existen las redes sociales esta labor de “investigación” previa, es un poco más sencilla.
