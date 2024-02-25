@@ -2,7 +2,7 @@
 layout: post
 title: 'Bye bye, Yellow Submarine... '
 image: /img/uploads/consultorio-renovacion.jpg
-video: xoxo
+video: ' '
 comments: 'true'
 ---
 Desaprender para aprender mejores formas de hacer la vida; dejar ir a las personas que solo llegaron a brillar algunas noches; pintar paredes que habían sido icónicas hasta hoy para darle paso a algo nuevo, tentativamente mejor. Así amanecimos hoy, 17 de febrero 2024, con una pared color azul océano, lisa y sin adornos, en lugar del gran submarino amarillo que nos había acompañado hasta hoy y desde hace casi 3 años. 
