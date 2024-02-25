@@ -14,6 +14,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Image", name: "image", widget: "image"}
+      - {label: "Video", name: "video", widget: "select", options: ["true", "false"]}
       - {label: "Video", name: "video", widget: "string"}
       - {label: "Comments", name: "comments", widget: "select", options: ["true", "false"]}
       - {label: "Content", name: "body", widget: "markdown"}
