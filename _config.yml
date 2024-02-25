@@ -63,6 +63,11 @@ defaults:
     quote:
     cite:
     layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
 
 url:
 description:
