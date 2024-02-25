@@ -3,7 +3,6 @@ title: ¡Bienvenidas y bienvenidos!
 image: "/uploads/01.jpg"
 date: 2024-01-01 11:04:00 Z
 comments: true
-layout: post
 ---
 
 
