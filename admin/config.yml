@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       
 
       
-      - {label: "URL del video en Youtube", name: "has-video", widget: "boolean", default: false}
+      - {label: "URL del video en Youtube", name: "has-video", widget: "boolean", default: true}
       - {label: "Video", name: "video", widget: "string"}
       - {label: "Tiene comentarios habilitados?", name: "comments", widget: "select", options: ["true", "false"]}
       - {label: "Contenido del POst", name: "body", widget: "markdown"}
