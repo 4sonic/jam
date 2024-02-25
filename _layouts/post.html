@@ -36,7 +36,7 @@ layout: default
       {% assign image = page.image%}
       <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="page__image">
 
-      {% if page.video %}
+      {% if page.has-video %}
       <div class="grid-y height-100 align-center">
         <div class="shrink cell text-center">
           <a href="{{page.video}}" class="white" target="_blank" rel="noopener noreferrer"><svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg><br><h2>Ver vídeo</h2></a>
