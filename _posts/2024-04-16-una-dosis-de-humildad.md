@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Una dosis de humildad '
-image: /img/uploads/whatsapp-image-2024-04-16-at-9.09.56-am.jpeg
+image: /img/uploads/kkkk.jpeg
 has-video: false
 video: x
 comments: 'true'
