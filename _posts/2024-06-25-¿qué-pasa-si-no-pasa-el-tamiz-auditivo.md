@@ -12,7 +12,7 @@ Hoy no vengo con una historia de mi vida.  Hoy les traigo información acerca de
 
 Bueno, sin mas, aqui voy: 
 
-<https://corti.com.mx/2024/06/25/qu%C3%A9-pasa-si-no-pasa-el-tamiz-auditivo/>
+(Primero ve el video de aquí arriba, pícale a "ver video")
 
 El tamiz auditivo neonatal es una prueba que se debe realizar a TOOOOODOS los recién nacidos para saber si escucha al 100% o nel pastel. 
 
@@ -56,13 +56,9 @@ _O sea: los factores de riesgo_
 
 **¡¡¡Si tu bebé tiene alguno de estos factores, entonces debemos hacer el tamiz auditivo ampliado, que incluye potenciales auditivos!!!!**
 
-
-
 > OJO AQUÍ:
 >
 > Es fundamental entender que un resultado "NO PASA" no indica sordera, sino que sugiere la necesidad de una evaluación completa mediante estudios audiológicos pediátricos para un diagnóstico preciso y la planificación del tratamiento adecuado. 
->
->
 
 # Ningún bebé debería someterse al tamiz auditivo más de dos veces; de no pasar en el segundo intento, se requiere una evaluación completa por parte de un médico especializado en Audiología.
 
